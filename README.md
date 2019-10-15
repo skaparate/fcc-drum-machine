@@ -1,3 +1,9 @@
+# Drum Machine
+
+[Español](README.es.md)
+
+This is a project created for the [FreeCodeCamp](https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-drum-machine/) curriculum by [skaparate](https://nicomv.com/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
