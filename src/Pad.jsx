@@ -35,6 +35,7 @@ class Pad extends React.Component {
   }
 
   onKeypress(event) {
+    console.debug('Key:', event.keyCode);
     if (this.props.power && event.keyCode === this.state.keyCode) {
       const button = document.querySelector(`#button-${this.state.key}`);
       button.classList.add('active');
