@@ -8,7 +8,7 @@ class Pad extends React.Component {
     const key = this.props.keyChar.toUpperCase();
 
     this.state = {
-      keyCode: key.charCodeAt(0),
+      keyCodes: [key.charCodeAt(0), key.toLowerCase().charCodeAt(0)],
       key,
     };
 
@@ -36,7 +36,7 @@ class Pad extends React.Component {
 
   onKeypress(event) {
     console.debug('Key:', event.keyCode);
-    if (this.props.power && event.keyCode === this.state.keyCode) {
+    if (this.props.power && this.state.keyCodes.includes(event.keyCode)) {
       const button = document.querySelector(`#button-${this.state.key}`);
       button.classList.add('active');
       button.click();
